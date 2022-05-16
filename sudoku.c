@@ -45,7 +45,7 @@ void print_node(Node* n){
 
 int is_valid(Node* n){
   int * aux;
-  int i,j,k,p;
+  int i,j,k,p = 0;
 
   for(j = 0; j < 9; j++){
     aux = calloc(10,sizeof(int));
