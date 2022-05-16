@@ -48,6 +48,7 @@ int is_valid(Node* n){
   int i,j,k,p;
 
   for(i = 0; i < 9; i++){
+    aux = calloc(10,sizeof(int));
     if(aux[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) aux[n->sudo[i][j]] = 1;
     else return 0;  
   }
