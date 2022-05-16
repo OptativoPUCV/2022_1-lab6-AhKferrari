@@ -2,3 +2,22 @@ Fri May 13 03:00:07 UTC 2022:
  tests:  0|5
 total_score: 0/70
 0ae7e84
+Mon May 16 00:45:34 UTC 2022: 
+ sudoku.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:59:11: error: expected expression before ‘Node’
+           Node * aux = createNode();
+           ^~~~
+sudoku.c:58:9: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+         if(n->sudo[i][j] == 0)
+         ^~
+sudoku.c:60:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+           aux = copy(n);
+           ^~~
+sudoku.c:60:11: error: ‘aux’ undeclared (first use in this function)
+sudoku.c:60:11: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+bc1a303
