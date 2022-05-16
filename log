@@ -251,3 +251,15 @@ sudoku.c:132:9: error: ‘aux’ undeclared (first use in this function)
 sudoku.c:132:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2de8df4
+Mon May 16 03:12:39 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:132:9: error: ‘nodo’ undeclared (first use in this function); did you mean ‘Node’?
+   free (nodo);
+         ^~~~
+         Node
+sudoku.c:132:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+84b9946

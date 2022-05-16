@@ -129,7 +129,7 @@ Node* DFS(Node* initial, int* cont){
       }  
     }
   
-  free (aux);
+  free (nodo);
 
   return NULL;
 }
