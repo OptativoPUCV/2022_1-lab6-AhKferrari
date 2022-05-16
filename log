@@ -263,3 +263,15 @@ sudoku.c:132:9: error: ‘nodo’ undeclared (first use in this function); did y
 sudoku.c:132:9: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 84b9946
+Mon May 16 03:13:58 UTC 2022: 
+ sudoku.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:132:9: error: ‘nodo’ undeclared (first use in this function); did you mean ‘Node’?
+   free (nodo);
+         ^~~~
+         Node
+sudoku.c:132:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2e9f06b
