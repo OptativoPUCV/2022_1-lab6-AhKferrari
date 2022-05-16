@@ -49,16 +49,18 @@ int is_valid(Node* n){
 
   for(i = 0; i < 9; i++){
     aux = calloc(10,sizeof(int));
-    if(aux[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) aux[n->sudo[i][j]] = 1;
-    else if(aux[n->sudo[i][j]] == 1 && n->sudo[i][j] != 0)  return 0;    
-      
+    for(j = 0; j < 9; j++){
+      if(aux[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) aux[n->sudo[i][j]] = 1;
+      else if(aux[n->sudo[i][j]] == 1 && n->sudo[i][j] != 0)  return 0;    
+    }
   }
 
   for(j = 0; j < 9; j++){
     aux = calloc(10,sizeof(int));
-    if(aux[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) aux[n->sudo[i][j]] = 1;
-    else if(aux[n->sudo[i][j]] == 1 && n->sudo[i][j] != 0) return 0;
-  
+    for(i = 0; i < 9; i++){
+      if(aux[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) aux[n->sudo[i][j]] = 1;
+      else if(aux[n->sudo[i][j]] == 1 && n->sudo[i][j] != 0) return 0;
+    }
   }
 
   for(k = 0; k < 9; k++){
