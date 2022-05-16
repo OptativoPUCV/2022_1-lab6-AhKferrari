@@ -229,3 +229,14 @@ Mon May 16 03:05:32 UTC 2022:
  tests:  10|0
 total_score: 70/70
 48abb1b
+Mon May 16 03:08:18 UTC 2022: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:131:9: error: ‘aux’ undeclared (first use in this function)
+   free (aux);
+         ^~~
+sudoku.c:131:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+3bb92d9
