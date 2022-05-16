@@ -174,3 +174,13 @@ Mon May 16 02:22:24 UTC 2022:
  tests:  6|2
 total_score: 45/70
 d92ea7e
+Mon May 16 02:39:16 UTC 2022: 
+ sudoku.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_final’:
+sudoku.c:108:5: error: expected ‘;’ before ‘}’ token
+     }
+     ^
+Compilation failed
+dc12150
