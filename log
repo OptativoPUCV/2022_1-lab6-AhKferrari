@@ -211,3 +211,15 @@ sudoku.c:123:14: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 e817c24
+Mon May 16 03:05:22 UTC 2022: 
+ sudoku.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:121:10: error: implicit declaration of function ‘es_final’; did you mean ‘is_final’? [-Werror=implicit-function-declaration]
+       if(es_final(nodo)) return nodo;
+          ^~~~~~~~
+          is_final
+cc1: all warnings being treated as errors
+Compilation failed
+380a145
