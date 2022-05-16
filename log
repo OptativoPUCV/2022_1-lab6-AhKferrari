@@ -102,3 +102,14 @@ sudoku.c:52:22: error: ‘j’ may be used uninitialized in this function [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 ee1d8d5
+Mon May 16 02:14:09 UTC 2022: 
+ sudoku.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+test.c: In function ‘is_valid’:
+sudoku.c:52:22: error: ‘j’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     if(aux[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) aux[n->sudo[i][j]] = 1;
+            ~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+a4a3e88
