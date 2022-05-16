@@ -196,3 +196,18 @@ Mon May 16 02:39:26 UTC 2022:
  tests:  7|1
 total_score: 55/70
 223d7f1
+Mon May 16 03:04:08 UTC 2022: 
+ sudoku.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘DFS’:
+sudoku.c:121:10: error: implicit declaration of function ‘es_final’; did you mean ‘is_final’? [-Werror=implicit-function-declaration]
+       if(es_final(nodo)) return nodo;
+          ^~~~~~~~
+          is_final
+sudoku.c:123:14: error: unused variable ‘aux’ [-Werror=unused-variable]
+       Node * aux = first(adj);
+              ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+e817c24
