@@ -52,3 +52,17 @@ sudoku.c:62:3: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 2b33284
+Mon May 16 02:12:45 UTC 2022: 
+ sudoku.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+test.c: In function ‘is_valid’:
+sudoku.c:51:22: error: ‘j’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     if(aux[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) aux[n->sudo[i][j]] = 1;
+            ~~~~~~~~~~^~~
+sudoku.c:51:11: error: ‘aux’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+     if(aux[n->sudo[i][j]] == 0 && n->sudo[i][j] != 0) aux[n->sudo[i][j]] = 1;
+           ^
+cc1: all warnings being treated as errors
+Compilation failed
+f75f2e6
