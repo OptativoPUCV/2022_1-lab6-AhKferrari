@@ -38,3 +38,17 @@ Mon May 16 00:46:57 UTC 2022:
  tests:  2|4
 total_score: 15/70
 91a6a23
+Mon May 16 02:10:59 UTC 2022: 
+ sudoku.c | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+In file included from test.c:5:0:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:61:5: error: statement with no effect [-Werror=unused-value]
+     aux
+     ^~~
+sudoku.c:62:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+cc1: all warnings being treated as errors
+Compilation failed
+2b33284
